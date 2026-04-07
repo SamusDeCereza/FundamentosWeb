@@ -29,9 +29,10 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     gap: 5rem;
+    padding: 1rem 5rem 1rem 5rem;
 }
 
-.card{
+.card, .small-card{
     border-radius: 0.3rem;
     padding: 1.3rem;
     max-width: 30%;
@@ -48,13 +49,13 @@ body{
 
 }
 
-.card h4{
+.card h4, .small-card h4{
     margin: 0px;
     font-size: 1.3rem;
     width: 100%;
 }
 
-.card p{
+.card p, .small-card p{
     margin: 0px;
     width: 100%;
 }
@@ -62,6 +63,11 @@ body{
 .card img{
     max-width: 100%;
     max-height: 20rem;
+    width: 80%;
+}
+
+.small-card img{
+    max-width: 15rem;
     width: 80%;
 }
 
