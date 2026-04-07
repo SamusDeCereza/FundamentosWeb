@@ -14,27 +14,25 @@
 <body>
     
     <nav>
-        <div class="nav-container">
+        <div id="nav-container">
             <img src="./src/img/monarch.png" alt="">
 
             <ul>
                 <li>
                     <a href="">Inicio</a>
                 </li>
-            </ul>
-
-            <ul>
                 <li>
                     <a href="">Seccion 2</a>
                 </li>
-            </ul>
-
-            <ul>
                 <li>
                     <a href="">Seccion 3</a>
                 </li>
-            </ul>            
+            </ul>
+
+            <span id="nav-close" onclick="hideNav()">X</span>
         </div>
+
+        <span id="nav-open" onclick="showNav()">+</span>
     </nav>
 
     <h2>Introduccion a CSS</h2>
@@ -128,4 +126,19 @@
     </section>
 
 </body>
+
+    <script>
+
+        const nav = document.getElementById("nav-container");
+
+        function showNav(){
+            nav.classList.add("visible");
+        }
+
+        function hideNav(){
+            nav.classList.remove("visible");
+        }
+
+    </script>
+
 </html>
