@@ -111,3 +111,33 @@ button:hover{
 #alineacionFlexbox{
     background-color: skyblue;
 }
+
+nav{
+    background-color: salmon;
+    width: 100%;
+    padding: 0rem 0.3rem 0rem 0.3rem;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+
+
+}
+
+.nav-container{
+    display: flex;
+}
+
+nav img{
+    width: 3rem;
+    margin: 0.15rem 0rem 0.15rem 0rem;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+}
+
