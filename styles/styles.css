@@ -1,5 +1,27 @@
+
+.bitter {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: Anton !important; 
+}
+
+
 body{
     background-color: #eff6ff;
+
+    /* Herencia */
+    font-family: Bitter;
 }
 
 .cards-container{
@@ -15,12 +37,15 @@ body{
     max-width: 30%;
     background-color: #e3e3e3;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: center;
     gap: 1rem;
+
+    /* Herencia */
+    text-align: center;
+
 }
 
 .card h4{
