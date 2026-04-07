@@ -19,6 +19,8 @@ h1, h2, h3, h4, h5{
 
 body{
     background-color: #eff6ff;
+    margin: 0px;
+    padding: 0px;
 
     /* Herencia */
     font-family: Bitter;
@@ -82,4 +84,30 @@ button{
 button:hover{
     background-color: greenyellow;
     color: rgb(39, 39, 39);
+}
+
+
+.content-left, .content-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 10rem 1rem 10rem;
+    gap: 10rem;
+    font-size: 1.2rem;
+}
+
+.content-right{
+    flex-direction: row-reverse;
+}
+
+.content-left img, .content-right img{
+    max-width: 15rem;
+    width: 30%;
+
+    border-radius: 0.3rem;
+}
+
+
+#alineacionFlexbox{
+    background-color: skyblue;
 }
