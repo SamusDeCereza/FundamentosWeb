@@ -237,6 +237,13 @@
             </li>
         </ul>
     </footer>
+
+    <div class="visible" id="cookies">
+        <p>     
+            Esta pagina utiliza cookies
+        </p>
+        <button onclick="dissapearCookies()">Aceptar</button>
+    </div>
 </body>
 
     <script>
@@ -249,6 +256,12 @@
 
         function hideNav(){
             nav.classList.remove("visible");
+        }
+
+        const cookies = document.getElementById("cookies");
+
+        function dissapearCookies(){
+            cookies.classList.add("invisible");
         }
 
     </script>

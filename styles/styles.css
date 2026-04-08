@@ -542,3 +542,44 @@ footer p:hover{
         gap: 0.3rem;
     }
 }
+
+#cookies{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+
+    background-color: var(--secondary);
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+
+    display: flex;
+    gap: 1rem;
+    align-content: center;
+
+    transition: all 1s ease;
+}
+
+#cookies.invisible {
+  opacity: 0 !important;
+  transform: translateY(10rem) !important;
+}
+
+#cookies p{
+    color: var(--secondary-content);
+    margin: 0px;
+    height: fit-content;
+}
+
+#cookies button{
+    background-color: var(--primary);
+    border: none;
+    font-weight: 600;
+    border-radius: 0.3rem;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1200px){
+    #cookies p{
+        font-size: 0.8rem;
+    }
+}
