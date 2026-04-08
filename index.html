@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentos del Desarrollo Web</title>
 
+    <link id="icon" rel="shortcut icon" href="./src/img/AigisIcon.webp" type="image/x-icon">
+
+
     <link rel="stylesheet" href="./styles/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,51 +18,68 @@
     
     <nav>
         <div id="nav-container">
-            <img src="./src/img/monarch.png" alt="">
+            <img src="./src/img/AigisIcon.webp" alt="">
 
             <ul>
                 <li>
-                    <a href="">Inicio</a>
+                    <a href=""><p>Inicio</p></a>
                 </li>
                 <li>
-                    <a href="">Seccion 2</a>
+                    <a href=""><p>Seccion 2</p></a>
                 </li>
                 <li>
-                    <a href="">Seccion 3</a>
+                    <a href=""><p>Seccion 3</p></a>
                 </li>
             </ul>
 
-            <span id="nav-close" onclick="hideNav()">X</span>
+            <button id="nav-close" onclick="hideNav()">
+                <img src="./src/img/close.png" alt="">
+            </button>
         </div>
 
-        <span id="nav-open" onclick="showNav()">+</span>
+        <button id="nav-open" onclick="showNav()">
+            <img src="./src/img/burguer.png" alt="">
+        </button>
     </nav>
 
-    <h2>Introduccion a CSS</h2>
+    <main class="global-container">
 
-    <p>Esta es una pagina web sencilla, que tiene enlazada una hoja de estilos externa.</p>
+        <section class="hero" id="inicio">
+            <img src="./src/img/aegis.jpg" alt="Aigis en la playa">
 
-    <section>        
-        <h2>Propiedades basicas de CSS</h2>
+            <div></div>
 
-        <div class="cards-container">
-            <div class="card">
-                <h4>Hola, soy una tarjeta</h4>
+            <article>
+                <h1>Aigis <br> FanPage</h1>
+                <p>Pagina creada por un <br> fan de Persona</p>
+            </article>
+        </section>
 
-                <img src="./src/img/foolArcana.png" alt="Fool Arcana">
+        <section id="vestuarios">
+            <h2>Vestuarios dentro del juego</h2>
 
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur placeat omnis nemo expedita unde doloremque quo, iure dignissimos earum aspernatur at numquam officia ad voluptate. Doloribus autem nesciunt ratione eum!]</p>
+            <div class="cards-container">
+                <div class="card">
+                    <h4>Hola, soy una tarjeta</h4>
+
+                    <img src="./src/img/foolArcana.png" alt="Fool Arcana">
+
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur placeat omnis nemo expedita unde doloremque quo, iure dignissimos earum aspernatur at numquam officia ad voluptate. Doloribus autem nesciunt ratione eum!]</p>
+                </div>
+
+                <div class="card">
+                    <h4>Hola, soy otra tarjeta</h4>
+
+                    <img src="./src/img/Aigis_29.webp" alt="Aegis">
+                
+                    <button>Haz click</button>
+                </div>
             </div>
+        </section>
+    </main>
 
-            <div class="card">
-                <h4>Hola, soy otra tarjeta</h4>
 
-                <img src="./src/img/Aigis_29.webp" alt="Aegis">
-            
-                <button>Haz click</button>
-            </div>
-        </div>
-    </section>
+
 
     <section>
         <h2>Herencia en CSS</h2>
@@ -123,6 +143,12 @@
         <h2>Position con CSS</h2>
 
         <p>Se añadio una navbar sticky que permanece al hacer scroll durante la pagina.</p>
+    </section>
+
+    <section>
+        <h2>Estilos responsivos</h2>
+
+        <p>Ahora la barra de navegacion es responsiva, tiene una vista de escritorio y una de movil</p>
     </section>
 
 </body>

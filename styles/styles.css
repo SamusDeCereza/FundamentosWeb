@@ -1,3 +1,27 @@
+:root{
+    --primary: #ffc54a;
+    --primary-content: #eff6ff;
+    
+    --secondary: #e10000; 
+    --secondary-content: #fff7ed;
+    
+    --accent: #79d7fd;
+    --accent-content: #f5fce5;
+    
+    --neutral: #00bbfa;
+    --neutral-content: #fff7ed;
+    
+    --dark-blue: #00183e;
+    --base-100: #fff7ed;
+    --base-200: #feecd3;
+    --base-content: #001736;
+
+    --black: #333333;
+
+    --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    --navbar-color: rgba(0, 24, 62, 0.800);
+    --navbar-color-alternative: rgba(0, 24, 62, 0.900);
+}
 
 .bitter {
   font-family: "Bitter", serif;
@@ -14,6 +38,7 @@
 
 h1, h2, h3, h4, h5{
     font-family: Anton !important; 
+    margin: 0;
 }
 
 
@@ -24,6 +49,10 @@ body{
 
     /* Herencia */
     font-family: Bitter;
+}
+
+#vestuarios{
+    background-color: var(--accent);
 }
 
 .cards-container{
@@ -37,7 +66,7 @@ body{
 .card, .small-card{
     border-radius: 0.3rem;
     padding: 1.3rem;
-    max-width: 30%;
+    max-width: 20rem;
     background-color: #e3e3e3;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
@@ -73,7 +102,7 @@ body{
     width: 80%;
 }
 
-button{
+.card button{
     background-color: green;
     color: #eff6ff;
     border-radius: 0.3rem;
@@ -81,7 +110,7 @@ button{
     border: none;
 }
 
-button:hover{
+.card button:hover{
     background-color: greenyellow;
     color: rgb(39, 39, 39);
 }
@@ -113,12 +142,17 @@ button:hover{
 }
 
 nav{
-    background-color: salmon;
+    background-color: var(--navbar-color);
+    box-shadow: var(--box-shadow);
+    backdrop-filter: blur(1rem);
+
     padding: 0rem 0.3rem 0rem 0.3rem;
 
     position: sticky;
     top: 0;
     left: 0;
+
+    z-index: 10;
 
 }
 
@@ -145,18 +179,28 @@ nav ul{
     padding: 0rem 1rem 0rem 1rem;
     gap: 1rem;
     list-style: none;
+    margin: 0px;
 }
 
 nav li{
+    height: 100%;
 }
 
 nav a{
+    display: flex;
+    align-items: center;
     width: 100%;
+    height: 100%;
     text-decoration: none;
+    color: var(--neutral-content);
+    font-weight: 300;
+}
+
+nav p{
+    margin: 0px;
 }
 
 #nav-open{
-    background-color: white;
     padding: 0.3rem;
     display: none;
 }
@@ -165,6 +209,15 @@ nav a{
     display: none;
 }
 
+nav button{
+    background-color: transparent !important;
+    border: none;
+}
+
+nav button img{
+    width: 1.8em;
+    height: 1.8rem;
+}
 
 @media screen and (min-width: 0px) and (max-width: 1200px){
     #nav-open{
@@ -176,11 +229,11 @@ nav a{
         position: absolute;
         right: 1rem;
         top: 1rem;
-        background-color: white;
     }
 
     #nav-container{
-        background-color: salmon;
+        background-color: var(--navbar-color-alternative);
+        backdrop-filter: blur(1000px);
         position: fixed;
         top: 0;
         left: 0;
@@ -202,12 +255,87 @@ nav a{
     nav ul{
         width: 100%;
         gap: 3rem;
-        padding: 0;
+        padding: 2rem 0rem 2rem 0rem;
     }
 
     nav li{
+        height: auto;
         width: 100%;
     }
 
+    nav a{
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 1rem 0rem 1rem 0rem;
+    }
 
+}
+
+
+
+
+.hero{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.hero img{
+    width: 100%;
+}
+
+.hero article{
+    position: absolute;
+    right: 25%;
+    top: 50%;
+    transform: translateX(50%) translateY(-50%);
+    text-align: right;
+    color: var(--dark-blue);
+    opacity: 0.8;
+}
+
+.hero div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--accent);
+    opacity: 0.4;
+    backdrop-filter: blur(1rem);
+
+}
+
+.hero h1{
+    font-size: 6rem;
+}
+
+.hero p{
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1200px){
+    .hero img{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .hero article{
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero h1{
+        font-size: 3rem;
+    }
+
+    .hero p{
+        font-size: 1rem;
+    }
 }
