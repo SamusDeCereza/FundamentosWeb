@@ -23,6 +23,10 @@
     --navbar-color-alternative: rgba(0, 24, 62, 0.900);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .bitter {
   font-family: "Bitter", serif;
   font-optical-sizing: auto;
@@ -43,7 +47,7 @@ h1, h2, h3, h4, h5{
 
 
 body{
-    background-color: #eff6ff;
+    background-color: var(--neutral);
     margin: 0px;
     padding: 0px;
 
@@ -51,8 +55,29 @@ body{
     font-family: Bitter;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    padding: 2rem 4rem 2rem 4rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1200px){
+    section{
+        padding: 2rem 1rem 2rem 1rem;
+    }
+}
+
 #vestuarios{
-    background-color: var(--accent);
+    background-color: var(--neutral);
+    position: relative;
+    top: -5px;
+}
+
+#vestuarios h2{
+    text-align: center;
 }
 
 .cards-container{
@@ -60,12 +85,19 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     gap: 5rem;
-    padding: 1rem 5rem 1rem 5rem;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1200px){
+    .cards-container{
+        gap: 2rem;
+    }
 }
 
 .card, .small-card{
     border-radius: 0.3rem;
     padding: 1.3rem;
+    width: 80rem;
     max-width: 20rem;
     background-color: #e3e3e3;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -78,6 +110,10 @@ body{
     /* Herencia */
     text-align: center;
 
+}
+
+.small-card{
+    width: 10rem;
 }
 
 .card h4, .small-card h4{
@@ -95,50 +131,62 @@ body{
     max-width: 100%;
     max-height: 20rem;
     width: 80%;
+    border-radius: 0.3rem;
 }
 
 .small-card img{
-    max-width: 15rem;
-    width: 80%;
+    width: 8rem;
 }
-
-.card button{
-    background-color: green;
-    color: #eff6ff;
-    border-radius: 0.3rem;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    border: none;
-}
-
-.card button:hover{
-    background-color: greenyellow;
-    color: rgb(39, 39, 39);
-}
-
 
 .content-left, .content-right{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem 10rem 1rem 10rem;
     gap: 10rem;
     font-size: 1.2rem;
 }
 
 .content-right{
     flex-direction: row-reverse;
+    text-align: right;
 }
 
 .content-left img, .content-right img{
-    max-width: 15rem;
-    width: 30%;
+    width: 15rem;
 
     border-radius: 0.3rem;
 }
 
+@media screen and (min-width: 0px) and (max-width: 1200px){
+    .content-left, .content-right{
+        flex-wrap: wrap;
+        gap: 1rem;
+        text-align: center;
+    }
 
-#alineacionFlexbox{
-    background-color: skyblue;
+    .content-left article, .content-right article{
+        width: 100% !important;
+    }
+
+    .content-left img, .content-right img{
+        max-width: 90%;
+        margin-top: 2rem;
+    }
+}
+
+#origen{
+    background-color: var(--accent);
+}
+
+.section-title{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--dark-blue);
+    transform: skew(-5deg);
+}
+
+#iconos{
+    
 }
 
 nav{
@@ -189,11 +237,17 @@ nav li{
 nav a{
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     text-decoration: none;
     color: var(--neutral-content);
     font-weight: 300;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+nav a:hover{
+    background-color: rgba(255, 255, 255, 0.288);
 }
 
 nav p{
@@ -283,6 +337,7 @@ nav button img{
 
 .hero img{
     width: 100%;
+    height: auto;
 }
 
 .hero article{
@@ -338,4 +393,64 @@ nav button img{
     .hero p{
         font-size: 1rem;
     }
+}
+
+footer{
+    background-color: var(--navbar-color);
+    box-shadow: var(--box-shadow);
+    backdrop-filter: blur(1rem);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+    padding: 1rem;
+    color: var(--neutral-content);
+}
+
+footer ul{
+ 
+    display: grid;
+    align-items: center;
+    grid-template: auto auto / auto auto ;
+    column-gap: 1rem;
+    grid-template-columns: auto auto;
+
+    padding: 0rem 1rem 0rem 1rem;
+    gap: 2rem;
+    list-style: none;
+    margin: 0px;
+}
+
+footer li{
+    height: 100%;
+}
+
+footer a{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--neutral-content);
+    font-weight: 300;
+}
+
+footer p{
+    margin: 0px;
+    text-align: center;
+}
+
+footer p:hover{
+    opacity: 0.5;
+}
+
+.rotate{
+    transition: all 0.3s ease;
+}
+
+.rotate:hover{
+    rotate: 5deg;
 }

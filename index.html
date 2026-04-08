@@ -16,33 +16,37 @@
 </head>
 <body>
     
-    <nav>
-        <div id="nav-container">
-            <img src="./src/img/AigisIcon.webp" alt="">
-
-            <ul>
-                <li>
-                    <a href=""><p>Inicio</p></a>
-                </li>
-                <li>
-                    <a href=""><p>Seccion 2</p></a>
-                </li>
-                <li>
-                    <a href=""><p>Seccion 3</p></a>
-                </li>
-            </ul>
-
-            <button id="nav-close" onclick="hideNav()">
-                <img src="./src/img/close.png" alt="">
-            </button>
-        </div>
-
-        <button id="nav-open" onclick="showNav()">
-            <img src="./src/img/burguer.png" alt="">
-        </button>
-    </nav>
+    
 
     <main class="global-container">
+        <nav>
+            <div id="nav-container">
+                <img src="./src/img/AigisIcon.webp" alt="">
+
+                <ul>
+                    <li>
+                        <a href="#inicio"><p>Inicio</p></a>
+                    </li>
+                    <li>
+                        <a href="#vestuarios"><p>Vestuarios</p></a>
+                    </li>
+                    <li>
+                        <a href="#origen"><p>Origen</p></a>
+                    </li>                
+                    <li>
+                        <a href="#iconos"><p>Iconos</p></a>
+                    </li>
+                </ul>
+
+                <button id="nav-close" onclick="hideNav()">
+                    <img src="./src/img/close.png" alt="">
+                </button>
+            </div>
+
+            <button id="nav-open" onclick="showNav()">
+                <img src="./src/img/burguer.png" alt="">
+            </button>
+        </nav>
 
         <section class="hero" id="inicio">
             <img src="./src/img/aegis.jpg" alt="Aigis en la playa">
@@ -56,101 +60,143 @@
         </section>
 
         <section id="vestuarios">
-            <h2>Vestuarios dentro del juego</h2>
+            <h2 class="section-title">Vestuarios dentro del juego</h2>
 
             <div class="cards-container">
-                <div class="card">
-                    <h4>Hola, soy una tarjeta</h4>
+                <div class="card rotate">
+                    <h4>Kimono</h4>
 
-                    <img src="./src/img/foolArcana.png" alt="Fool Arcana">
+                    <img src="./src/img/AigisKimono.webp" alt="Fool Arcana">
 
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur placeat omnis nemo expedita unde doloremque quo, iure dignissimos earum aspernatur at numquam officia ad voluptate. Doloribus autem nesciunt ratione eum!]</p>
+                    <p>
+                        Traje utilizado durante la celebracion de año nuevo dentro del juego.
+                    </p>
                 </div>
 
-                <div class="card">
-                    <h4>Hola, soy otra tarjeta</h4>
+                <div class="card rotate">
+                    <h4>SEES</h4>
 
-                    <img src="./src/img/Aigis_29.webp" alt="Aegis">
+                    <img src="./src/img/AigisSEES.webp" alt="Aegis">
                 
-                    <button>Haz click</button>
+                    <p>
+                        Traje utilizado durante las infiltraciones dentro del Tartaro.
+                    </p>
                 </div>
+
+                <div class="card rotate">
+                    <h4>Vestido</h4>
+
+                    <img src="./src/img/AigisDress.webp" alt="Aegis">
+                
+                    <p>
+                        Traje utilizado en la primera interaccion con Aigis.
+                    </p>
+                </div>
+
+                <div class="card rotate">
+                    <h4>Mark 2</h4>
+
+                    <img src="./src/img/AigisMark2.webp" alt="Aegis">
+                
+                    <p>
+                        Traje utilizado durante los eventos de The Answer.
+                    </p>
+                </div>
+
+                <div class="card rotate">
+                    <h4>Gekkoukan</h4>
+
+                    <img src="./src/img/AigisGe.webp" alt="Aegis">
+                
+                    <p>
+                        Traje correspondiente al instituro Gekkoukan.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="origen">
+            <h2 class="section-title">Origen</h2>
+
+            <article class="content-left">
+
+                <img src="./src/img/aigisPortrait.png" alt="Aigis con uniforme del instituto Geoukkan">
+
+                <p>
+                    Aigis es un androide anti-Sombra (Anti-Shadow Suppression Weapon), creada para combatir a las Sombras que aparecen durante la Hora Oscura.
+                    <br>
+                    <br>
+                    Aigis fue desarrollada por el Grupo Kirijo, una poderosa corporación responsable de investigar las Sombras y el fenómeno de la Hora Oscura.
+                    <br>
+                    <br>
+                    Inicialmente, Aigis es una robot obediente, pero su devoción al protagonista la lleva a desarrollar emociones humanas. 
+
+                </p>
+            </article>
+
+            <article class="content-right">
+
+                <img src="./src/img/persona3AigisEdition.jpg" alt="Imagen promocional de Persona 3 Aigis Edition">
+
+                <p>
+                    Su falta de habilidades sociales es evidente, pero su amabilidad y su dedicación inquebrantable a sus amigos son rasgos distintivos. 
+                    <br>
+                    <br>
+                    Su viaje emocional es uno de los aspectos más maravillosos del personaje, pues ella tiene que aprender qué es el significado de vivir. 
+                    <br>
+                    <br>
+                    A lo largo de la saga, Aigis se va haciendo más humana, aunque siempre mantendrá su naturaleza artificial.
+                </p>
+            </article>        
+        </section>
+
+        <section id="iconos">
+            <h2 class="section-title">Iconos de estado</h2>
+
+            <div class="cards-container">
+                <div class="small-card rotate">
+                    <h4>Miembro</h4>
+                    <img src="./src/img/partyIcon.webp" alt="Party Icon">
+                </div>
+                <div class="small-card rotate">
+                    <h4>Daño</h4>
+                    <img src="./src/img/hurtIcon.webp" alt="Hurt Icon">
+                </div>
+                <div class="small-card rotate">
+                    <h4>Desenfreno</h4>
+                    <img src="./src/img/desenIcon.webp" alt="Desenfreno Icon">
+                </div>
+                <div class="small-card rotate">
+                    <h4>Enfriamiento</h4>
+                    <img src="./src/img/enfriIcon.webp" alt="Enfriamento Icon">
+                </div>
+                <div class="small-card rotate">
+                    <h4>Noqueada</h4>
+                    <img src="./src/img/offIcon.webp" alt="Noqueado Icon">
+                </div>
+                
             </div>
         </section>
     </main>
 
+    <footer>
+        <small>©Aigis FanPage</small>
 
-
-
-    <section>
-        <h2>Herencia en CSS</h2>
-
-        <p>Se añadieron fuentes para la pagina web, y en los estilos css se emplearon tecnicas de herencia, enfatizadas con un comentario que indica el uso de herencia.</p>
-    </section>
-
-    <section>
-        <h2>Introduccion a Flexbox</h2>
-
-        <div class="cards-container">
-            <div class="small-card">
-                <h4>1</h4>
-                <img src="./src/img/monarch.png" alt="Monarch">
-            </div>
-            <div class="small-card">
-                <h4>2</h4>
-                <img src="./src/img/monarch.png" alt="Monarch">
-            </div>
-            <div class="small-card">
-                <h4>3</h4>
-                <img src="./src/img/monarch.png" alt="Monarch">
-            </div>
-            <div class="small-card">
-                <h4>4</h4>
-                <img src="./src/img/monarch.png" alt="Monarch">
-            </div>
-            <div class="small-card">
-                <h4>5</h4>
-                <img src="./src/img/monarch.png" alt="Monarch">
-            </div>
-               
-        </div>
-    </section>
-
-    <section id="alineacionFlexbox">
-        <h2>Alineacion con Flexbox</h2>
-
-        <article class="content-left">
-
-            <img src="./src/img/aigisPortrait.png" alt="Aigis con uniforme del instituto Geoukkan">
-
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam illum consectetur, eaque quas soluta, ad id voluptate voluptates culpa quis ut optio explicabo praesentium illo rerum. Ullam ex excepturi dolores.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere saepe optio, itaque a accusamus autem dicta natus dolores sequi esse quos, molestias quidem ipsam laborum hic commodi sapiente! Aliquid, sapiente?
-            </p>
-        </article>
-
-        <article class="content-right">
-
-            <img src="./src/img/persona3AigisEdition.jpg" alt="Imagen promocional de Persona 3 Aigis Edition">
-
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam illum consectetur, eaque quas soluta, ad id voluptate voluptates culpa quis ut optio explicabo praesentium illo rerum. Ullam ex excepturi dolores.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere saepe optio, itaque a accusamus autem dicta natus dolores sequi esse quos, molestias quidem ipsam laborum hic commodi sapiente! Aliquid, sapiente?
-            </p>
-        </article>        
-    </section>
-
-    <section>
-        <h2>Position con CSS</h2>
-
-        <p>Se añadio una navbar sticky que permanece al hacer scroll durante la pagina.</p>
-    </section>
-
-    <section>
-        <h2>Estilos responsivos</h2>
-
-        <p>Ahora la barra de navegacion es responsiva, tiene una vista de escritorio y una de movil</p>
-    </section>
-
+        <ul>
+            <li>
+                <a href="#inicio"><p>Inicio</p></a>
+            </li>
+            <li>
+                <a href="#vestuarios"><p>Vestuarios</p></a>
+            </li>
+            <li>
+                <a href="#origen"><p>Origen</p></a>
+            </li>                
+            <li>
+                <a href="#iconos"><p>Iconos</p></a>
+            </li>
+        </ul>
+    </footer>
 </body>
 
     <script>
