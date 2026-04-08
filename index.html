@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundamentos del Desarrollo Web</title>
+    <title>Aigis FanPage</title>
 
     <link id="icon" rel="shortcut icon" href="./src/img/AigisIcon.webp" type="image/x-icon">
 
@@ -36,6 +36,9 @@
                     <li>
                         <a href="#iconos"><p>Iconos</p></a>
                     </li>
+                    <li>
+                        <a href="#contacto"><p>Contacto</p></a>
+                    </li>                    
                 </ul>
 
                 <button id="nav-close" onclick="hideNav()">
@@ -176,6 +179,43 @@
                 </div>
                 
             </div>
+        </section>
+
+        <section id="contacto">
+            <article class="container-1">
+                <h2 class="section-title">Contactanos</h2>
+                <p>Rellena y envia el formulario para establecer contacto, estamos emocioandos por escuchar tus ideas.</p>
+            </article>
+
+            <article class="container-2">
+                <form action="">
+
+                    <h3>Formulario</h3>
+
+                    <label for="nombre">
+                        Nombre:
+                        <input type="text" placeholder="Nombre" id="nombre" maxlength="40">
+                    </label>
+
+                    <label for="email">
+                        Email:
+                        <input type="email" placeholder="Email" id="email" maxlength="50">
+                    </label>
+
+
+                    <label for="mensaje">
+                        Mensaje:    
+                        <div>
+                            <textarea name=l"" id="" placeholder="Mensaje" id="mensaje" maxlength="255"></textarea>
+                        </div>
+                    </label>
+
+                    <label for="" class="btn-submit">
+                        <input type="submit" value="Enviar">
+                    </label>
+
+                </form>
+            </article>
         </section>
     </main>
 

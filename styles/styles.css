@@ -454,3 +454,91 @@ footer p:hover{
 .rotate:hover{
     rotate: 5deg;
 }
+
+#contacto{
+    background-color: var(--accent);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container-1{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    max-width: 40%;
+}
+
+.container-1 h2{
+    width: 100%;
+}
+
+.container-1 p{
+    width: 100%;
+}
+
+.container-2{
+    width: fit-content;
+}
+
+.container-2 form{
+    background-color: var(--base-100);
+    padding: 2rem;
+    border-radius: 0.5rem;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+
+    width: fit-content;
+    gap: 2rem;
+}
+
+.container-2 form h3{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.container-2 form label{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    align-content: center;
+}
+
+.container-2 form input{
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    border: #33333369 solid 1px;
+}
+
+.btn-submit{
+    display: flex;
+    justify-content: center !important;
+
+
+}
+
+.btn-submit input{
+    background-color: var(--primary);
+    border: none !important;
+    padding: 0.3rem 1rem 0.3rem 1rem !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1200px){
+    .container-1{
+        max-width: none;
+    }
+
+    .container-2 form{
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .container-2 form label{
+        gap: 0.3rem;
+    }
+}
