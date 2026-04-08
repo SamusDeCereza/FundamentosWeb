@@ -513,6 +513,11 @@ footer p:hover{
     border: #33333369 solid 1px;
 }
 
+.container-2 form input:focus, .container-2 form textarea:focus{
+    background-color: var(--dark-blue);
+    color: var(--neutral-content);
+}
+
 .btn-submit{
     display: flex;
     justify-content: center !important;
